@@ -1,0 +1,13 @@
+{
+    "screenshots": {
+      "path": "test_reports/screenshots",
+      "takeOnFails": true,
+      "pathPattern": "${DATE}_${TIME}/${TEST}/${USERAGENT}/${FILE_INDEX}.png"
+    },
+    "reporter": [
+      {
+        "name": "html",
+        "output": "test_reports/report.html"
+      }
+    ]
+  }
