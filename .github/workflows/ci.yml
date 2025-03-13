@@ -34,8 +34,3 @@ jobs:
           npx testcafe chrome src/tests/*.ts --reporter html:test_reports/test-report.html || exit 1
         continue-on-error: true
 
-      - name: Upload test reports
-        uses: actions/upload-artifact@v3
-        with:
-          name: test_reports
-          path: test_reports/*
