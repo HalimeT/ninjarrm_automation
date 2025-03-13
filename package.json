@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "testcafe chrome:headless src/tests/*.ts -r html:test-report.html",
+    "lint": "eslint 'src/**/*.{ts,tsx}' --quiet || true"  
   },
   "keywords": [],
   "author": "",
