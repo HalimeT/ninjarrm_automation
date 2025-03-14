@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "testcafe chrome:headless src/tests/*.ts -r html:test-report.html",
+    "test": "testcafe chrome:headless src/tests/*.ts -r spec -r html:test-report.html",
     "lint": "eslint 'src/**/*.{ts,tsx}' --quiet || true"  
-  },
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
